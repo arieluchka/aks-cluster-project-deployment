@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-for-ingress1
+  labels:
+    app: service-for-ingress1
+spec:
+  selector:
+    app: kubepython
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 8080
+    targetPort: 8080

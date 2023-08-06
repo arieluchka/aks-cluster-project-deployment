@@ -1,0 +1,28 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: html-code
+data:
+  webcode.html:
+    <html>
+      <head>
+          <title>Example</title>
+      </head>
+      <body>
+          <p>guy i hope you will feel good</p>
+      </body>
+    </html>
+  banana:
+    yummy
+  amit:
+    is a good student
+  USERNAME:
+    ariel123
+  testfile:
+    test ok
+  ori:
+    test passed
+  guy:
+    sick
+    
