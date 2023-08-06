@@ -8,7 +8,7 @@ spec:
 
 
   source:
-    repoURL:
+    repoURL: https://github.com/arieluchka/aks-cluster-project-deployment
     targetRevision: HEAD
     path: prod
   destination:
