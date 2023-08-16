@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: kubepython
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
@@ -14,13 +14,13 @@ spec:
     spec:
       containers:
       - name: python-web-test
-        image: arieluchka/kubepython:1.0
+        image: arieluchka/aks-app-jenkins-test:0.6
         ports:
         - containerPort: 8080
-        volumeMounts:
-        - name: webconfig
-          mountPath: /app/webcode
-      volumes:
-      - name: webconfig
-        configMap:
-          name: html-code
+      #   volumeMounts:
+      #   - name: webconfig
+      #     mountPath: /app/webcode
+      # volumes:
+      # - name: webconfig
+      #   configMap:
+      #     name: html-code
