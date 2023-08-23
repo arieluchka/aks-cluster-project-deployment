@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/arieluchka/aks-cluster-project-deployment
     targetRevision: main
-    path: prod
+    path: cluster-files
   destination:
     server: https://kubernetes.default.svc
     namespace: prod
