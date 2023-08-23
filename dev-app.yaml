@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: staging-app
+  name: dev-app
   namespace: argocd
 spec:
   project: default
@@ -9,11 +9,11 @@ spec:
 
   source:
     repoURL: https://github.com/arieluchka/aks-cluster-project-deployment
-    targetRevision: feature
-    path: staging
+    targetRevision: dev
+    path: cluster-files
   destination:
     server: https://kubernetes.default.svc
-    namespace: staging
+    namespace: dev
   
   syncPolicy:
     syncOptions:
