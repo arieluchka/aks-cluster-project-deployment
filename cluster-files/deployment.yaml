@@ -15,6 +15,7 @@ spec:
       containers:
       - name: python-web-test
         image: arieluchka/aks-app-jenkins-test:1.0.1-dev
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 
